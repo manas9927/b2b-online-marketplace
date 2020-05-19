@@ -137,83 +137,75 @@
                 <!-- add-listing-tost-block -->
                 <form id="add_listing_form" class="form-common add-listing-form" action="#" novalidate="novalidate">
                     <div class="listing-block businessinfo-listing">
-                        <h4>Business Information</h4>
+                        <h4>Product Information</h4>
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="businessinfo-left-block">
                                     <div class="form-group">
-                                        <label for="listing_name">Listing Name</label>
-                                        <input id="listing_name" type="text" class="form-control form-single-element" placeholder="Ex: Anderson Hotel" aria-required="true">
-                                        <input id="listing_tagline" type="text" class="form-control" placeholder="Business Tagline goes here" aria-required="true">
+                                        <label for="listing_name">Product Name</label>
+                                        <input id="listing_name" type="text" class="form-control form-single-element" placeholder="Ex: iPhone X" aria-required="true">
                                     </div>
                                     <div class="form-group">
-                                        <label for="listing_email">Contact Email</label>
-                                        <input id="listing_email" type="email" class="form-control" placeholder="Ex: info@example.com" aria-required="true">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="listing_phone_no">Contact Phone</label>
-                                        <input id="listing_phone_no" type="text" class="form-control" placeholder="Ex: +1-0000-000-000" aria-required="true">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="listing_website">Website</label>
-                                        <input id="listing_website" type="text" class="form-control" placeholder="Ex: www.example.com" aria-required="true">
+                                        <label for="listing_address">Brand Name</label>
+                                        <input id="listing_address" type="text" class="form-control" placeholder="Ex: Apple" aria-required="true">
                                     </div>
                                 </div>
-                            </div>
-                            <!-- col-lg-6 -->
-                            <div class="col-lg-6">
-                                <div class="businessinfo-right-block">
-                                    <div id="add_listing_map" class="add-listing-map"></div>
-                                    <div class="form-group">
-                                        <label for="listing_address">Location (Full Address)</label>
-                                        <input id="listing_address" type="text" class="form-control" placeholder="Find your place in gogle map" aria-required="true">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="listing_region">Listing Region</label>
-                                        <input id="listing_region" type="text" class="form-control" placeholder="Select your listing region" aria-required="true">
-                                    </div>
-                                </div>
-                            </div>
+                            </div>  
                         </div>
                     </div>
                     <!-- businessinfo-listing -->
                     <div class="listing-block Others-Information-listing">
-                        <h4>Others Information</h4>
+                        <h4>Other Information</h4>
                         <div class="row">
                             <div class="col-lg-5">
                                 <div class="form-group">
-                                    <label for="listing_category">Category</label>
+                                    <label for="listing_category">Product Category</label>
                                     <select id="listing_category" class="form-control">
-										<option>Default select</option>
-										<option>First select</option>
-										<option>Second select</option>
-										<option>Third select</option>
+                                        <option value="none" selected disabled hidden>Select an Option</option>
+                                        <option>Aerospace Industry</option>
+										<option>Apparel and Garments</option>
+										<option>Transport Industry</option>
+                                        <option>Computer Industry</option>
+                                        <option>Telecommunication industry</option>
+                                        <option>Agriculture industry</option>
+                                        <option>Construction Industry</option>
+                                        <option>Education Industry</option>
+                                        <option>Electronics Industry</option>
+                                        <option>Pharmaceutical Industry</option>
+                                        <option>Food and Beverages</option>
+                                        <option>Drugs and Pharmaceuticals</option>
+                                        <option>Hospital and Diagnostics</option>
+                                        <option>Entertainment Industry</option>
+                                        <option>News Media Industry</option>
+                                        <option>Energy Industry</option>
+                                        <option>Manufacturing Industry</option>
+                                        <option>Music Industry</option>
+                                        <option>Mining Industry</option>
+                                        <option>World Wide web</option>
+                                        <option>Electronics Industry</option>
 									</select>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-2">
+                                <div class="form-group listing-price">
+                                    <input id="listing_price" type="text" class="form-control" placeholder="Price in Rupees" aria-required="true">
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
                                 <div class="form-group">
-                                    <label for="listing_price">Price</label>
-                                    <select id="listing_price" class="form-control">
-										<option>Default select</option>
-										<option>Price One</option>
-										<option>Price Two</option>
-										<option>Price Three</option>
+                                    <label for="listing_category">Product Unit</label>
+                                    <select id="listing_category" class="form-control">
+                                        <option value="none" selected disabled hidden>Select an Option</option>
+                                        <option>Grams</option>
+										<option>Litres</option>
+										<option>meters</option>
+                                        <option>Square Meters</option>
+                                        <option>Count</option>
 									</select>
-                                </div>
-                            </div>
-                            <div class="col-lg-2">
-                                <div class="form-group listing-price">
-                                    <input id="listing_price_from" type="text" class="form-control" placeholder="Price From" aria-required="true">
-                                </div>
-                            </div>
-                            <div class="col-lg-2">
-                                <div class="form-group listing-price">
-                                    <input id="listing_price_to" type="text" class="form-control" placeholder="Price To" aria-required="true">
                                 </div>
                             </div>
                             <div class="col-lg-12">
-                                <div class="listing-features-block">
+                                <!-- <div class="listing-features-block">
                                     <h5>Select listing features</h5>
                                     <table>
                                         <tbody>
@@ -249,7 +241,7 @@
 															</label>
                                                         </div>
                                                     </div>
-                                                    <!-- block-checkbox block -->
+                                                    
                                                 </td>
                                                 <td>
                                                     <div class="form-group">
@@ -282,7 +274,7 @@
 															</label>
                                                         </div>
                                                     </div>
-                                                    <!-- block-checkbox block -->
+                                                    
                                                 </td>
                                                 <td>
                                                     <div class="form-group">
@@ -315,7 +307,7 @@
 															</label>
                                                         </div>
                                                     </div>
-                                                    <!-- block-checkbox block -->
+                                                    
                                                 </td>
                                                 <td>
                                                     <div class="form-group">
@@ -348,129 +340,12 @@
 															</label>
                                                         </div>
                                                     </div>
-                                                    <!-- block-checkbox block -->
+                                                    
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
-                                </div>
-                                <!-- listing-features-block -->
-                                <div class="listing-additionalinfo-block">
-                                    <h5>Aditional info</h5>
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div class="form-group additionalinfo-toggle-switch">
-                                                        <input type="checkbox" checked id="aditionalInfo1">
-                                                        <label for="aditionalInfo1">Pet Friendly</label>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="form-group additionalinfo-toggle-switch">
-                                                        <input type="checkbox" checked id="aditionalInfo2">
-                                                        <label for="aditionalInfo2">Wheel Accessible</label>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="form-group additionalinfo-toggle-switch">
-                                                        <input type="checkbox" id="aditionalInfo3">
-                                                        <label for="aditionalInfo3">Child Friendly</label>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="form-group additionalinfo-toggle-switch">
-                                                        <input type="checkbox" checked id="aditionalInfo4">
-                                                        <label for="aditionalInfo4">First Aid Service</label>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="form-group additionalinfo-toggle-switch">
-                                                        <input type="checkbox" checked id="aditionalInfo5">
-                                                        <label for="aditionalInfo5">Fire Safety</label>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <!-- listing-additionalinfo-block -->
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <input id="listing_others" type="text" class="form-control" placeholder="Others" aria-required="true">
-                                </div>
-                                <div class="listing-businesshour-block">
-                                    <h5>Business Hours</h5>
-                                    <div class="form-check">
-                                        <div class="multiple-label-checkbox-block">
-                                            <p><strong>Monday [+]</strong> 08:00 <b>-</b> 10:00</p>
-                                            <label class="custom-control custom-checkbox">
-												<input type="checkbox" class="custom-control-input">
-												<span class="custom-control-indicator"></span>
-												<span class="custom-control-description">Closed</span>
-											</label>
-                                        </div>
-                                        <div class="multiple-label-checkbox-block">
-                                            <p><strong>Tuesday [+]</strong> 08:00 <b>-</b> 10:00</p>
-                                            <label class="custom-control custom-checkbox">
-												<input type="checkbox" class="custom-control-input">
-												<span class="custom-control-indicator"></span>
-												<span class="custom-control-description">Closed</span>
-											</label>
-                                        </div>
-                                        <div class="multiple-label-checkbox-block">
-                                            <p><strong>Wednesday [+]</strong> 08:00 <b>-</b> 10:00</p>
-                                            <label class="custom-control custom-checkbox">
-												<input type="checkbox" class="custom-control-input">
-												<span class="custom-control-indicator"></span>
-												<span class="custom-control-description">Closed</span>
-											</label>
-                                        </div>
-                                        <div class="multiple-label-checkbox-block">
-                                            <p><strong>Thursday [+]</strong> 08:00 <b>-</b> 10:00</p>
-                                            <label class="custom-control custom-checkbox">
-												<input type="checkbox" class="custom-control-input">
-												<span class="custom-control-indicator"></span>
-												<span class="custom-control-description">Closed</span>
-											</label>
-                                        </div>
-                                        <div class="multiple-label-checkbox-block">
-                                            <p><strong>Frinday [+]</strong> 08:00 <b>-</b> 10:00</p>
-                                            <label class="custom-control custom-checkbox">
-												<input type="checkbox" class="custom-control-input">
-												<span class="custom-control-indicator"></span>
-												<span class="custom-control-description">Closed</span>
-											</label>
-                                        </div>
-                                        <div class="multiple-label-checkbox-block">
-                                            <p><strong>Saturday [+]</strong> 08:00 <b>-</b> 10:00</p>
-                                            <label class="custom-control custom-checkbox">
-												<input type="checkbox" class="custom-control-input">
-												<span class="custom-control-indicator"></span>
-												<span class="custom-control-description">Closed</span>
-											</label>
-                                        </div>
-                                        <div class="multiple-label-checkbox-block">
-                                            <p><strong>Sunday [+]</strong> 08:00 <b>-</b> 10:00</p>
-                                            <label class="custom-control custom-checkbox">
-												<input type="checkbox" class="custom-control-input">
-												<span class="custom-control-indicator"></span>
-												<span class="custom-control-description">Closed</span>
-											</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- listing-businesshour-block -->
-                                <div class="form-group time-zone-block">
-                                    <label for="listing_timezone">Time Zone</label>
-                                    <select id="listing_timezone" class="form-control">
-										<option>Select your business time zone.. Ex: UTC +0</option>
-										<option>Select your business time zone.. Ex: UTC +10</option>
-										<option>Select your business time zone.. Ex: UTC +20</option>
-										<option>Select your business time zone.. Ex: UTC +30</option>
-									</select>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -479,72 +354,19 @@
                         <h4>Product Details</h4>
                         <div class="form-group listing-compose-block">
                             <label for="listing_descreption">Description</label>
-                            <textarea rows="5" cols="50" id="listing_descreption" class="form-control compose-box" placeholder="Comma Seperated Ex:  Real Estate, Construction"></textarea>
+                            <div class="form-group textarea-form-group">
+                                <textarea rows="5" cols="50" id="listing_descreption" class="form-control" placeholder="Description here"></textarea>
+                            </div>                            
                         </div>
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group textarea-form-group">
                                     <label for="listing_kewords">Keywords</label>
                                     <textarea rows="5" cols="50" id="listing_kewords" class="form-control" placeholder="Comma Seperated Ex:  Real Estate, Construction"></textarea>
-                                </div>
-                                <div class="promotional-video-block form-group">
-                                    <label for="listing_youtube_video_1">Promotional Video</label>
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <input id="listing_youtube_video_1" type="text" class="form-control" placeholder="YouTube Video URL Here" aria-required="true">
-                                            </div>
-                                            <div class="form-group">
-                                                <input id="listing_youtube_video_2" type="text" class="form-control" placeholder="YouTube Video URL Here" aria-required="true">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <input id="listing_youtube_video_3" type="text" class="form-control" placeholder="YouTube Video URL Here" aria-required="true">
-                                            </div>
-                                            <div class="form-group">
-                                                <input id="listing_youtube_video_4" type="text" class="form-control" placeholder="YouTube Video URL Here" aria-required="true">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="listing_faq">FAQ</label>
-                                    <input id="listing_faq" type="text" class="form-control" placeholder="Question" aria-required="true">
-                                </div>
-                                <div class="form-group textarea-form-group">
-                                    <textarea rows="5" cols="50" id="listing_answer" class="form-control" placeholder="Answer"></textarea>
-                                </div>
-                                <button type="button" class="listing-btn-large">+ Add New</button>
+                                </div>                                
+                                <!-- <button type="button" class="listing-btn-large">+ Add New</button> -->
                             </div>
                             <div class="col-lg-6">
-                                <div class="social-profile-block form-group">
-                                    <label for="listing_facebook_url">Social Profile</label>
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <input id="listing_facebook_url" type="text" class="form-control" placeholder="Facebook URL" aria-required="true">
-                                            </div>
-                                            <div class="form-group">
-                                                <input id="listing_twitter_url" type="text" class="form-control" placeholder="Twitter URL" aria-required="true">
-                                            </div>
-                                            <div class="form-group">
-                                                <input id="listing_instagram_url" type="text" class="form-control" placeholder="Instagram URL" aria-required="true">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <input id="listing_googleplus_url" type="text" class="form-control" placeholder="Google Plus URL" aria-required="true">
-                                            </div>
-                                            <div class="form-group">
-                                                <input id="listing_youtube_url" type="text" class="form-control" placeholder="YouTube URL" aria-required="true">
-                                            </div>
-                                            <div class="form-group">
-                                                <input id="listing_linkedin_url" type="text" class="form-control" placeholder="Linkedin URL" aria-required="true">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="uload-images-block">
                                     <h5>Upload Images</h5>
                                     <div class="form-group form-group-file-type">
@@ -553,17 +375,7 @@
                                         <span>Maximum file size: 20 MB.</span>
                                     </div>
                                     <div class="form-group form-group-file-type">
-                                        <label for="listing_company_cover_photo">Cover Image</label>
-                                        <input type="file" class="form-control-file" id="listing_company_cover_photo">
-                                        <span>Maximum file size: 20 MB.</span>
-                                    </div>
-                                    <div class="form-group form-group-file-type">
-                                        <label for="listing_company_slide_photo">Slide Show Images</label>
-                                        <input type="file" class="form-control-file" id="listing_company_slide_photo">
-                                        <span>Maximum file size: 90 MB.</span>
-                                    </div>
-                                    <div class="form-group form-group-file-type">
-                                        <label for="listing_company_gallary_photo">Gallery Images (optional)</label>
+                                        <label for="listing_company_gallary_photo">Gallery Images </label>
                                         <input type="file" class="form-control-file" id="listing_company_gallary_photo">
                                         <span>Maximum file size: 90 MB.</span>
                                     </div>
@@ -580,18 +392,8 @@
                             <span>File Format .pdf, .doc, .docx, .ppt, .pptx, .jpeg, .png</span>
                         </div>
                         <div class="form-group form-group-file-type">
-                            <label for="listing_company_brochure">Company Brochure</label>
+                            <label for="listing_company_brochure">Product Brochure</label>
                             <input type="file" class="form-control-file" id="listing_company_brochure">
-                            <span>File Format .pdf, .doc, .docx, .ppt, .pptx, .jpeg, .png</span>
-                        </div>
-                        <div class="form-group form-group-file-type">
-                            <label for="listing_company_resturant">Food Menu (Restaurant)</label>
-                            <input type="file" class="form-control-file" id="listing_company_resturant">
-                            <span>File Format .pdf, .doc, .docx, .ppt, .pptx, .jpeg, .png</span>
-                        </div>
-                        <div class="form-group form-group-file-type">
-                            <label for="listing_company_document">Others Document</label>
-                            <input type="file" class="form-control-file" id="listing_company_document">
                             <span>File Format .pdf, .doc, .docx, .ppt, .pptx, .jpeg, .png</span>
                         </div>
                     </div>
@@ -729,55 +531,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="footer-widget">
-                                <h4 class="footer-widget-title">Latest Listings</h4>
-                                <article class="latest-post">
-                                    <div class="post-thumb">
-                                        <a href="javascript:void(0)">
-                                            <img src="images/post/7.jpg" alt="img" class="img-responsive">
-                                        </a>
-                                    </div>
-                                    <div class="post-wrapper">
-                                        <h6 class="title">
-                                            <a href="javascript:void(0)">
-												Grand Park Hotel
-											</a>
-                                        </h6>
-                                        <p class="post-entry">
-                                            175 Church Road, City Tower, California, CA785423
-                                        </p>
-                                        <div class="post-meta">
-                                            <a href="javascript:void(0)" class="post-tag">
-												Hotel & Resort
-											</a>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="latest-post">
-                                    <div class="post-thumb">
-                                        <a href="javascript:void(0)">
-                                            <img src="images/post/7.jpg" alt="img" class="img-responsive">
-                                        </a>
-                                    </div>
-                                    <div class="post-wrapper">
-                                        <h6 class="title">
-                                            <a href="javascript:void(0)">
-											Grand Park Hotel
-										</a>
-                                        </h6>
-                                        <p class="post-entry">
-                                            175 Church Road, City Tower, California, CA785423
-                                        </p>
-                                        <div class="post-meta">
-                                            <a href="javascript:void(0)" class="post-tag">
-												Hotel & Resort
-											</a>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
