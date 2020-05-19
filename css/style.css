@@ -689,7 +689,7 @@ input:not([type=submit]):not([type=radio]):not([type=checkbox]):focus, select:fo
   padding: 270px 0 180px 0;
   position: relative;
   text-align: center;
-  background: url(../images/background/2.jpg) center center no-repeat; }
+  background: url(../images/background/product-listing.png) center center no-repeat; }
   .subheader h2 {
     line-height: 45px;
     font-weight: 700;
