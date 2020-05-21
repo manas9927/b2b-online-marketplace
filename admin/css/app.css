@@ -698,8 +698,6 @@ iframe {
     width: 8px;
     border-radius: 50%;
     background: #3867D6;
-    top: 1px;
-    right: 10px; }
 
 .card-inner-block .mail-contnet,
 .card-inner-block .notification-details {
@@ -2471,6 +2469,7 @@ div.dataTables_wrapper div.dataTables_info {
     -webkit-box-shadow: none;
     box-shadow: none;
     background: #3867D6; }
+    
   .toggle-group .btn.toggle-handle {
     height: 16px;
     width: 16px;
@@ -2487,6 +2486,7 @@ div.dataTables_wrapper div.dataTables_info {
 
 .toggle.btn.ios {
   background: #3867D6; }
+
   .toggle.btn.ios .toggle-handle {
     position: absolute;
     right: 4px;
