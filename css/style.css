@@ -157,6 +157,7 @@ iframe {
   top: 0;
   height: 100%;
   width: 100%;
+  background: rgba(17, 17, 17, 0.7);
    }
 
 .social-with-label span {
@@ -171,7 +172,8 @@ iframe {
 /*--- section title style --*/
 .section-title {
   text-align: center;
-  margin-bottom: 45px; }
+  margin-bottom: 45px;
+  padding-top: 45px; }
   .section-title h2 {
     margin-bottom: 0;
     line-height: 62px; }
@@ -215,12 +217,12 @@ a[class^='icon-btn-'] {
 .adining-listing-btn {
   background-color: #3867D6; }
   .adining-listing-btn:hover, .adining-listing-btn:focus, .adining-listing-btn:active {
-    background-color: rgba(253, 136, 10, 0.78); }
+    background-color: rgb(139, 224, 244); }
 
 .explore-listing-btn {
-  background-color: #9dcb45; }
+  background-color: #3867D6; }
   .explore-listing-btn:hover, .explore-listing-btn:focus, .explore-listing-btn:active {
-    background-color: rgba(127, 186, 0, 0.78); }
+    background-color: rgb(139, 224, 244); }
 
 .listing-btn-cmn,
 .contact-btn {
@@ -236,7 +238,7 @@ a[class^='icon-btn-'] {
   .contact-btn:focus,
   .contact-btn:active {
     color: #fff;
-    background-color: rgba(253, 136, 10, 0.78); }
+    background-color: rgb(139, 224, 244); }
 
 .pricing-btn {
   width: 213px;
@@ -628,7 +630,7 @@ input:not([type=submit]):not([type=radio]):not([type=checkbox]):focus, select:fo
   width: 255px;
   border-radius: 15px;
   border-color: #3867D6; }
-
+  
 .filter-form.filter-header-form button {
   width: 150px;
   border-radius: 0;
@@ -643,11 +645,11 @@ input:not([type=submit]):not([type=radio]):not([type=checkbox]):focus, select:fo
 
 .listing-promote-steps {
   text-align: center;
-  background: url(../images/background/arrow-icon.png) center 20px no-repeat; }
+  background: url(../images/background/arrow.png) center 20px no-repeat; }
   .listing-promote-steps .listing-promote-block {
     display: inline-block;
     width: 180px;
-    color: #FFF;
+    color: #3867D6;
     text-align: center; }
     .listing-promote-steps .listing-promote-block span {
       font-size: 40px; }
@@ -662,7 +664,8 @@ input:not([type=submit]):not([type=radio]):not([type=checkbox]):focus, select:fo
 
 .main-header-section-two .filter-form.filter-header-form .btn-group {
   position: relative;
-  top: 0; }
+  top: 0;
+  margin-left: 100px; }
   .main-header-section-two .filter-form.filter-header-form .btn-group button {
     margin: 0;
     width: 140px; }
@@ -693,7 +696,7 @@ input:not([type=submit]):not([type=radio]):not([type=checkbox]):focus, select:fo
   padding: 270px 0 180px 0;
   position: relative;
   text-align: center;
-  background: url(../images/background/2.jpg) center center no-repeat; }
+  background: url(../images/background/background_signup.svg) center center no-repeat; }
   .subheader h2 {
     line-height: 45px;
     font-weight: 700;
@@ -1210,7 +1213,7 @@ input:not([type=submit]):not([type=radio]):not([type=checkbox]):focus, select:fo
 
 .catagory-text {
   position: absolute;
-  top: 65%;
+  top: 78%;
   left: 0;
   right: 0;
   z-index: 999;
@@ -1302,7 +1305,7 @@ input:not([type=submit]):not([type=radio]):not([type=checkbox]):focus, select:fo
 .working-process-section {
   position: relative;
   padding: 80px 0;
-  background: url(../images/background/1.jpg) center center no-repeat; }
+  background: #3867D6; }
   .working-process-section .section-title h2, .working-process-section .section-title p {
     color: #fff; }
 
@@ -1312,7 +1315,7 @@ input:not([type=submit]):not([type=radio]):not([type=checkbox]):focus, select:fo
   background: rgba(255, 255, 255, 0.2); }
   .working-process-block span[class^="ti-"] {
     font-size: 35px;
-    color: #3867D6;
+    color: #FFF;
     margin-bottom: 25px;
     display: block; }
   .working-process-block h4 {
@@ -2897,15 +2900,15 @@ input:-moz-placeholder {
     position: absolute; }
   .nmbr-statistic-block .nmbr-statistic-icon {
     position: absolute;
-    color: #fff;
+    color: #3867D6;
     font-size: 30px;
     height: 55px;
     width: 55px;
     border-radius: 50%;
     text-align: center;
     line-height: 47px;
-    border: 5px solid #fff;
-    background: #3867D6;
+    border: 5px solid #3867D6;
+    background: #fff;
     -webkit-transform: translateY(-30px);
     -ms-transform: translateY(-30px);
     transform: translateY(-30px);

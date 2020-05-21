@@ -247,7 +247,7 @@ body {
   line-height: 55px;
   text-align: center;
   font-size: 18px;
-  color: #fd880a;
+  color: #3867D6;
   -webkit-transition: none;
   -moz-transition: none;
   -o-transition: none;
@@ -313,4 +313,4 @@ body {
   -webkit-transform: translateY(-6px);
   -ms-transform: translateY(-6px);
   transform: translateY(-6px);
-  background: #fd880a; }
+  background: #3867D6; }
